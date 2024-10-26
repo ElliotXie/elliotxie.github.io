@@ -67,7 +67,7 @@ nav {
 /* Hero Section Styling */
 .hero {
     height: 100vh;
-    background: linear-gradient(rgba(30, 144, 255, 0.7), rgba(30, 144, 255, 0.7)), url('assets/hero-bg.jpg') no-repeat center center/cover;
+    background: linear-gradient(rgba(30, 144, 255, 0.8), rgba(65, 105, 225, 0.8)), url('assets/hero-bg.jpg') no-repeat center center/cover;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -413,3 +413,26 @@ footer {
         max-width: 100%;
     }
 }
+
+/* Additional Blue Theme Enhancements */
+.hero-content h1 {
+    color: var(--white);
+    text-shadow: 2px 2px 4px rgba(0, 0, 70, 0.5);
+}
+
+.hero-content p {
+    color: var(--light-blue);
+}
+
+section {
+    background-color: var(--white);
+    margin: 2rem 0;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(30, 144, 255, 0.1);
+}
+
+.nav-links a:hover {
+    color: var(--light-blue);
+}
+
+/* ... (keep the rest of the existing styles) ... */
