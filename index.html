@@ -8,6 +8,8 @@
     <link rel="stylesheet" href="style.css">
     <!-- Google Fonts -->
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
 </head>
 <body>
 
@@ -17,6 +19,10 @@
         <ul class="nav-links">
             <li><a href="#about">About Me</a></li>
             <li><a href="#research">Research</a></li>
+            <li><a href="#articles">Articles</a></li>
+            <li><a href="#papers">Papers</a></li>
+            <li><a href="#projects">Projects</a></li>
+            <li><a href="#music">Music</a></li>
             <li><a href="#contact">Contact</a></li>
         </ul>
         <div class="burger">
@@ -36,7 +42,7 @@
     </section>
 
     <!-- About Me Section -->
-    <section id="about">
+    <section id="about" class="reveal fade-bottom">
         <h2>About Me</h2>
         <p>
             I'm a Ph.D. student at the University of Wisconsin-Madison specializing in Biostatistics and Bioinformatics.
@@ -48,25 +54,94 @@
     <section id="research">
         <h2>Research Interests</h2>
         <div class="research-cards">
-            <div class="card">
+            <div class="card reveal fade-left">
+                <i class="fas fa-dna fa-3x" style="color: #1e90ff; margin-bottom: 1rem;"></i>
                 <h3>Single-Cell Analysis</h3>
                 <p>Exploring cellular heterogeneity through advanced computational methods.</p>
             </div>
-            <div class="card">
+            <div class="card reveal fade-bottom">
+                <i class="fas fa-robot fa-3x" style="color: #1e90ff; margin-bottom: 1rem;"></i>
                 <h3>Multi-Agent LLMs</h3>
                 <p>Developing collaborative language models for complex problem-solving.</p>
             </div>
-            <div class="card">
+            <div class="card reveal fade-right">
+                <i class="fas fa-brain fa-3x" style="color: #1e90ff; margin-bottom: 1rem;"></i>
                 <h3>Reinforcement Learning</h3>
                 <p>Applying RL techniques to optimize decision-making processes.</p>
             </div>
         </div>
     </section>
 
+    <!-- Articles Section -->
+    <section id="articles" class="reveal fade-bottom">
+        <h2>Latest Articles</h2>
+        <div class="article-list">
+            <div class="article-item">
+                <h3>The Future of AI in Healthcare</h3>
+                <p>Exploring the potential impact of artificial intelligence on medical diagnostics and treatment.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <div class="article-item">
+                <h3>Advancements in Single-Cell Sequencing</h3>
+                <p>A deep dive into recent breakthroughs in single-cell analysis techniques.</p>
+                <a href="#" class="read-more">Read More</a>
+            </div>
+            <!-- Add more article items as needed -->
+        </div>
+    </section>
+
+    <!-- Published Papers Section -->
+    <section id="papers" class="reveal fade-bottom">
+        <h2>Published Papers</h2>
+        <ul class="paper-list">
+            <li>
+                <h3>Title of Paper 1</h3>
+                <p>Authors: Xie, E.Y., et al.</p>
+                <p>Journal: Nature Biotechnology, 2023</p>
+                <a href="#" class="paper-link">View Paper</a>
+            </li>
+            <li>
+                <h3>Title of Paper 2</h3>
+                <p>Authors: Smith, J., Xie, E.Y., et al.</p>
+                <p>Journal: Cell, 2022</p>
+                <a href="#" class="paper-link">View Paper</a>
+            </li>
+            <!-- Add more papers as needed -->
+        </ul>
+    </section>
+
+    <!-- Ongoing Projects Section -->
+    <section id="projects" class="reveal fade-bottom">
+        <h2>Ongoing Projects</h2>
+        <div class="project-grid">
+            <div class="project-card">
+                <h3>Project 1 Title</h3>
+                <p>Brief description of the ongoing project and its goals.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+            <div class="project-card">
+                <h3>Project 2 Title</h3>
+                <p>Brief description of another ongoing project and its significance.</p>
+                <a href="#" class="project-link">Learn More</a>
+            </div>
+            <!-- Add more project cards as needed -->
+        </div>
+    </section>
+
+    <!-- Music Section -->
+    <section id="music" class="reveal fade-bottom">
+        <h2>My Music</h2>
+        <p>When I'm not immersed in research, I enjoy creating and listening to music. Here are some of my favorite tracks:</p>
+        <div class="music-player">
+            <!-- Add your preferred music player embed code here -->
+            <iframe src="https://open.spotify.com/embed/playlist/YOUR_PLAYLIST_ID" width="100%" height="380" frameborder="0" allowtransparency="true" allow="encrypted-media"></iframe>
+        </div>
+    </section>
+
     <!-- Contact Section -->
-    <section id="contact">
+    <section id="contact" class="reveal fade-bottom">
         <h2>Get In Touch</h2>
-        <p>Email: <a href="mailto:elliot.xie@example.com">elliot.xie@example.com</a></p>
+        <p>Email: <a href="mailto:xie227@wisc.edu">xie227@wisc.edu</a></p>
         <p>Connect with me on <a href="https://www.linkedin.com/in/elliotxie" target="_blank">LinkedIn</a></p>
     </section>
 
