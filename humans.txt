@@ -1,0 +1,15 @@
+/* TEAM */
+	Developer: Elliot Yixuan Xie
+	Contact: xie227@wisc.edu
+	Website: https://www.elliotxie.com
+	From: Wisconsin, USA
+
+/* SITE */
+	Last update: 2024-07-01
+	Language: English
+	Doctype: HTML5
+	IDE: Various
+	
+/* THANKS */
+	University of Wisconsin-Madison
+	Department of Biostatistics and Bioinformatics 

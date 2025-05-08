@@ -3,31 +3,37 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elliot Yixuan Xie | PhD Student in Biostatistics and Bioinformatics</title>
+    <title>Elliot Yixuan Xie | PhD Student in Biostatistics and Bioinformatics at UW-Madison</title>
     
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Elliot Yixuan Xie is a PhD student at UW Madison specializing in Biostatistics and Bioinformatics, focusing on single-cell analysis, multi-agent LLMs, and reinforcement learning.">
-    <meta name="keywords" content="Elliot Yixuan Xie, PhD Student, UW Madison, Biostatistics, Bioinformatics, Single-Cell Analysis, Multi-Agent LLMs, Reinforcement Learning">
+    <meta name="description" content="Elliot Yixuan Xie is a PhD student at UW-Madison specializing in Biostatistics and Bioinformatics, with expertise in single-cell analysis, multi-agent LLMs, and reinforcement learning.">
+    <meta name="keywords" content="Elliot Yixuan Xie, PhD Student, UW-Madison, University of Wisconsin, Biostatistics, Bioinformatics, Single-Cell Analysis, Multi-Agent LLMs, Reinforcement Learning, Computational Biology">
     <meta name="author" content="Elliot Yixuan Xie">
     <meta name="google-site-verification" content="google383ae63baf445a53" />
-
+    <meta name="robots" content="index, follow">
+    <meta name="language" content="English">
+    <link rel="canonical" href="https://www.elliotxie.com/">
+    <link type="text/plain" rel="author" href="/humans.txt" />
     
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website">
     <meta property="og:url" content="https://www.elliotxie.com/">
     <meta property="og:title" content="Elliot Yixuan Xie | PhD Student in Biostatistics and Bioinformatics">
-    <meta property="og:description" content="Explore the research and projects of Elliot Yixuan Xie, a PhD student at UW Madison specializing in Biostatistics and Bioinformatics.">
+    <meta property="og:description" content="Explore the research and expertise of Elliot Yixuan Xie, a PhD student at UW-Madison specializing in Biostatistics, Bioinformatics, and AI applications in healthcare.">
     <meta property="og:image" content="https://www.elliotxie.com/assets/profile-image.jpg">
+    <meta property="og:site_name" content="Elliot Yixuan Xie">
+    <meta property="og:locale" content="en_US">
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image">
     <meta property="twitter:url" content="https://www.elliotxie.com/">
     <meta property="twitter:title" content="Elliot Yixuan Xie | PhD Student in Biostatistics and Bioinformatics">
-    <meta property="twitter:description" content="Explore the research and projects of Elliot Yixuan Xie, a PhD student at UW Madison specializing in Biostatistics and Bioinformatics.">
+    <meta property="twitter:description" content="Explore the research and expertise of Elliot Yixuan Xie, a PhD student at UW-Madison specializing in Biostatistics, Bioinformatics, and AI applications in healthcare.">
     <meta property="twitter:image" content="https://www.elliotxie.com/assets/profile-image.jpg">
 
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="assets/favicon.png">
+    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
 
     <!-- Link to CSS -->
     <link rel="stylesheet" href="style.css">
@@ -39,65 +45,72 @@
 <body>
 
     <!-- Navigation Menu -->
-    <nav>
-        <div class="logo">Elliot Yixuan Xie</div>
-        <ul class="nav-links">
-            <li><a href="#about">About Me</a></li>
-            <li><a href="#research">Research</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-        <div class="burger">
-            <div class="line1"></div>
-            <div class="line2"></div>
-            <div class="line3"></div>
-        </div>
-    </nav>
+    <header>
+        <nav aria-label="Main navigation">
+            <div class="logo">Elliot Yixuan Xie</div>
+            <ul class="nav-links">
+                <li><a href="#about" aria-label="About Me section">About Me</a></li>
+                <li><a href="#research" aria-label="Research section">Research</a></li>
+                <li><a href="#contact" aria-label="Contact section">Contact</a></li>
+            </ul>
+            <button class="burger" aria-label="Toggle navigation menu" aria-expanded="false">
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+            </button>
+        </nav>
+    </header>
 
     <!-- Hero Section -->
     <section class="hero">
         <div class="hero-content">
             <h1>Hi, I'm Elliot Yixuan Xie</h1>
-            <p>Ph.D. Student at UW Madison</p>
-            <a href="#about" class="btn">Learn More</a>
+            <p>Ph.D. Student at University of Wisconsin-Madison</p>
+            <a href="#about" class="btn" aria-label="Learn more about Elliot Xie">Learn More</a>
         </div>
     </section>
 
     <!-- About Me Section -->
     <section id="about" class="reveal fade-bottom">
         <h2>About Me</h2>
-        <p>
-            I'm a Ph.D. student at the University of Wisconsin-Madison specializing in Biostatistics and Bioinformatics.
-            My current work focuses on single-cell analysis, multi-agent large language models (LLMs), and reinforcement learning (RL).
-        </p>
+        <div class="about-content">
+            <p>
+                I'm a Ph.D. student at the University of Wisconsin-Madison specializing in Biostatistics and Bioinformatics.
+                My current work focuses on single-cell analysis, multi-agent large language models (LLMs), and reinforcement learning (RL).
+                I'm passionate about developing computational methods to solve complex biological problems and advance healthcare research.
+            </p>
+        </div>
     </section>
 
     <!-- Research Section -->
     <section id="research">
         <h2>Research Interests</h2>
         <div class="research-cards">
-            <div class="card reveal fade-left">
-                <i class="fas fa-dna fa-3x" style="color: #1e90ff; margin-bottom: 1rem;"></i>
+            <article class="card reveal fade-left">
+                <i class="fas fa-dna fa-3x" style="color: #1e90ff; margin-bottom: 1rem;" aria-hidden="true"></i>
                 <h3>Single-Cell Analysis</h3>
-                <p>Exploring cellular heterogeneity through advanced computational methods.</p>
-            </div>
-            <div class="card reveal fade-bottom">
-                <i class="fas fa-robot fa-3x" style="color: #1e90ff; margin-bottom: 1rem;"></i>
+                <p>Exploring cellular heterogeneity through advanced computational methods, focusing on identifying cell types and understanding disease mechanisms at the single-cell level.</p>
+            </article>
+            <article class="card reveal fade-bottom">
+                <i class="fas fa-robot fa-3x" style="color: #1e90ff; margin-bottom: 1rem;" aria-hidden="true"></i>
                 <h3>Multi-Agent LLMs</h3>
-                <p>Developing collaborative language models for complex problem-solving.</p>
-            </div>
-            <div class="card reveal fade-right">
-                <i class="fas fa-brain fa-3x" style="color: #1e90ff; margin-bottom: 1rem;"></i>
+                <p>Developing collaborative language models for complex problem-solving in biomedical research, enabling advanced data analysis and interpretation of scientific literature.</p>
+            </article>
+            <article class="card reveal fade-right">
+                <i class="fas fa-brain fa-3x" style="color: #1e90ff; margin-bottom: 1rem;" aria-hidden="true"></i>
                 <h3>Reinforcement Learning</h3>
-                <p>Applying RL techniques to optimize decision-making processes.</p>
-            </div>
+                <p>Applying RL techniques to optimize decision-making processes in healthcare, treatment planning, and drug discovery workflows.</p>
+            </article>
         </div>
     </section>
 
     <!-- Contact Section -->
     <section id="contact" class="reveal fade-bottom">
         <h2>Get In Touch</h2>
-        <p>Email: <a href="mailto:xie227@wisc.edu">xie227@wisc.edu</a></p>
-        <p>Connect with me on <a href="https://www.linkedin.com/in/yixuan-xie-5904391a0/" target="_blank">LinkedIn</a></p>
+        <div class="contact-info">
+            <p>Email: <a href="mailto:xie227@wisc.edu">xie227@wisc.edu</a></p>
+            <p>Connect with me on <a href="https://www.linkedin.com/in/yixuan-xie-5904391a0/" target="_blank" rel="noopener">LinkedIn</a></p>
+        </div>
     </section>
 
     <!-- Footer -->
@@ -112,20 +125,58 @@
       "@type": "Person",
       "name": "Elliot Yixuan Xie",
       "url": "https://www.elliotxie.com",
+      "image": "https://www.elliotxie.com/assets/profile-image.jpg",
       "sameAs": [
-        "https://www.linkedin.com/in/elliotxie",
+        "https://www.linkedin.com/in/yixuan-xie-5904391a0/",
         "https://twitter.com/elliotxie"
       ],
       "jobTitle": "PhD Student",
       "worksFor": {
         "@type": "Organization",
-        "name": "University of Wisconsin-Madison"
+        "name": "University of Wisconsin-Madison",
+        "url": "https://www.wisc.edu/"
       },
       "alumniOf": {
         "@type": "Organization",
-        "name": "University of Wisconsin-Madison"
+        "name": "University of Wisconsin-Madison",
+        "url": "https://www.wisc.edu/"
       },
+      "knowsAbout": ["Biostatistics", "Bioinformatics", "Single-Cell Analysis", "Machine Learning", "Reinforcement Learning", "Multi-Agent LLMs"],
       "description": "PhD student specializing in Biostatistics and Bioinformatics, focusing on single-cell analysis, multi-agent LLMs, and reinforcement learning."
+    }
+    </script>
+
+    <!-- Breadcrumbs Structured Data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "BreadcrumbList",
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": "https://www.elliotxie.com/"
+        },
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": "About",
+          "item": "https://www.elliotxie.com/#about"
+        },
+        {
+          "@type": "ListItem",
+          "position": 3,
+          "name": "Research",
+          "item": "https://www.elliotxie.com/#research"
+        },
+        {
+          "@type": "ListItem",
+          "position": 4,
+          "name": "Contact",
+          "item": "https://www.elliotxie.com/#contact"
+        }
+      ]
     }
     </script>
 

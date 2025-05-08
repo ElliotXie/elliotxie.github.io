@@ -1,0 +1,9 @@
+# robots.txt for elliotxie.com
+User-agent: *
+Allow: /
+
+# Sitemap location
+Sitemap: https://www.elliotxie.com/sitemap.xml
+
+# Crawl delay
+Crawl-delay: 10 
