@@ -3,184 +3,620 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Elliot Yixuan Xie | PhD Student in Biostatistics and Bioinformatics at UW-Madison</title>
+    <title>Yixuan Elliot Xie | Biomedical Data Science</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bodoni+Moda:ital,opsz,wght@0,6..96,400;0,6..96,600;1,6..96,400&family=Inter:wght@300;400;500&display=swap" rel="stylesheet">
     
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="Elliot Yixuan Xie is a PhD student at UW-Madison specializing in Biostatistics and Bioinformatics, with expertise in single-cell analysis, multi-agent LLMs, and reinforcement learning.">
-    <meta name="keywords" content="Elliot Yixuan Xie, PhD Student, UW-Madison, University of Wisconsin, Biostatistics, Bioinformatics, Single-Cell Analysis, Multi-Agent LLMs, Reinforcement Learning, Computational Biology">
-    <meta name="author" content="Elliot Yixuan Xie">
-    <meta name="google-site-verification" content="google383ae63baf445a53" />
-    <meta name="robots" content="index, follow">
-    <meta name="language" content="English">
-    <link rel="canonical" href="https://www.elliotxie.com/">
-    <link type="text/plain" rel="author" href="/humans.txt" />
-    
-    <!-- Open Graph / Facebook -->
-    <meta property="og:type" content="website">
-    <meta property="og:url" content="https://www.elliotxie.com/">
-    <meta property="og:title" content="Elliot Yixuan Xie | PhD Student in Biostatistics and Bioinformatics">
-    <meta property="og:description" content="Explore the research and expertise of Elliot Yixuan Xie, a PhD student at UW-Madison specializing in Biostatistics, Bioinformatics, and AI applications in healthcare.">
-    <meta property="og:image" content="https://www.elliotxie.com/assets/profile-image.jpg">
-    <meta property="og:site_name" content="Elliot Yixuan Xie">
-    <meta property="og:locale" content="en_US">
+    <style>
+        html {
+            scroll-behavior: smooth; /* Smooth scrolling for anchor links */
+        }
 
-    <!-- Twitter -->
-    <meta property="twitter:card" content="summary_large_image">
-    <meta property="twitter:url" content="https://www.elliotxie.com/">
-    <meta property="twitter:title" content="Elliot Yixuan Xie | PhD Student in Biostatistics and Bioinformatics">
-    <meta property="twitter:description" content="Explore the research and expertise of Elliot Yixuan Xie, a PhD student at UW-Madison specializing in Biostatistics, Bioinformatics, and AI applications in healthcare.">
-    <meta property="twitter:image" content="https://www.elliotxie.com/assets/profile-image.jpg">
+        :root {
+            --bg-color: #080808; /* Deep Black */
+            --text-main: #e6e2d6; /* Warm Paper */
+            --text-muted: #757575;
+            --accent: #c5a059; /* Muted Gold */
+            --line-color: #2a2a2a;
+            --overlay-bg: #0f0f0f;
+        }
 
-    <!-- Favicon -->
-    <link rel="icon" type="image/png" href="assets/favicon.png">
-    <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+        * { box-sizing: border-box; margin: 0; padding: 0; }
 
-    <!-- Link to CSS -->
-    <link rel="stylesheet" href="style.css">
-    <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
-    <!-- Font Awesome for icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+        body {
+            background-color: var(--bg-color);
+            color: var(--text-main);
+            font-family: 'Inter', sans-serif;
+            font-weight: 300;
+            line-height: 1.8;
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden; /* Prevent horizontal scroll */
+        }
+
+        h1, h2, h3, h4 {
+            font-family: 'Bodoni Moda', serif;
+            font-weight: 400;
+            letter-spacing: -0.03em;
+        }
+
+        a { text-decoration: none; color: inherit; transition: all 0.3s ease; cursor: pointer;}
+        a:hover { color: var(--accent); }
+
+        /* --- Layout --- */
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 0 5%;
+        }
+
+        section { margin-bottom: 8rem; }
+
+        /* --- Navigation --- */
+        nav {
+            padding: 2.5rem 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid var(--line-color);
+            margin-bottom: 4rem;
+        }
+        .nav-name { font-family: 'Bodoni Moda', serif; font-size: 1.3rem; letter-spacing: -0.02em;}
+        .nav-links a { margin-left: 2rem; font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.1em; color: var(--text-muted); }
+        .nav-links a:hover { color: var(--text-main); }
+
+        /* --- Hero Section --- */
+        .hero {
+            display: grid;
+            grid-template-columns: auto 1fr;
+            gap: 3rem;
+            align-items: center;
+            margin-bottom: 4rem;
+        }
+
+        .profile-img {
+            width: 180px;
+            height: 180px;
+            border-radius: 50%;
+            background-color: #222;
+            object-fit: cover;
+            border: 2px solid var(--line-color);
+        }
+
+        .hero-text h1 { font-size: 2.5rem; margin-bottom: 0.5rem; }
+        .hero-role { color: var(--accent); text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; margin-bottom: 1rem; display: block;}
+        .hero-desc { color: var(--text-muted); font-size: 1rem; max-width: 500px; line-height: 1.6; }
+
+        /* --- The Quote --- */
+        .quote-section {
+            text-align: center;
+            padding: 2rem 0 6rem 0;
+            border-bottom: 1px solid var(--line-color);
+            margin-bottom: 6rem;
+        }
+        blockquote {
+            font-family: 'Bodoni Moda', serif;
+            font-size: 1.4rem;
+            font-style: italic;
+            color: var(--text-main);
+            max-width: 750px;
+            margin: 0 auto;
+            line-height: 1.5;
+        }
+
+        /* --- Headers --- */
+        .section-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: baseline;
+            margin-bottom: 3rem;
+            border-bottom: 1px solid var(--line-color);
+            padding-bottom: 1rem;
+        }
+        .section-header h2 { font-size: 2rem; }
+
+        /* --- Publications --- */
+        .pub-item {
+            padding: 1.5rem 0;
+            border-bottom: 1px solid var(--line-color);
+            display: grid;
+            grid-template-columns: 80px 1fr;
+            gap: 1rem;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            margin-left: 0;
+            padding-left: 0;
+            border-left: 2px solid transparent;
+        }
+
+        .pub-item:hover {
+            transform: translateX(8px);
+            background: linear-gradient(90deg, rgba(197, 160, 89, 0.05) 0%, transparent 100%);
+            border-left-color: var(--accent);
+            padding-left: 1.2rem;
+        }
+
+        .pub-item:hover .pub-year {
+            color: var(--accent);
+            transform: scale(1.05);
+        }
+
+        .pub-item:hover .pub-content h4 {
+            color: var(--accent);
+        }
+
+        .pub-year {
+            color: var(--text-muted);
+            font-family: 'Bodoni Moda', serif;
+            font-size: 1.2rem;
+            transition: all 0.3s ease;
+        }
+
+        .pub-content h4 {
+            font-size: 1.1rem;
+            font-family: 'Inter', sans-serif;
+            font-weight: 400;
+            margin-bottom: 0.3rem;
+            transition: color 0.3s ease;
+        }
+
+        .pub-meta { font-size: 0.9rem; color: var(--text-muted); }
+
+        /* Special Highlight for CASSIA */
+        .highlight-pub .pub-content h4 { color: var(--accent); font-weight: 500; }
+        .highlight-pub { border-left: 2px solid var(--accent); padding-left: 1.5rem; margin-left: -1.5rem; }
+
+        /* --- Thoughts / Blog Grid --- */
+        .blog-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 3rem;
+        }
+        .blog-post {
+            margin-bottom: 2rem;
+            padding: 1.5rem;
+            margin-left: -1.5rem;
+            margin-right: -1.5rem;
+            border-left: 2px solid transparent;
+            cursor: pointer;
+            transition: all 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+        }
+
+        .blog-post:hover {
+            transform: translateX(8px);
+            background: linear-gradient(90deg, rgba(197, 160, 89, 0.05) 0%, transparent 100%);
+            border-left-color: var(--accent);
+            padding-left: 2rem;
+        }
+
+        .blog-post:hover .blog-title {
+            color: var(--accent);
+        }
+
+        .blog-post:hover .blog-date {
+            color: var(--accent);
+        }
+
+        .blog-date {
+            font-size: 0.75rem;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--text-muted);
+            display: block;
+            margin-bottom: 0.5rem;
+            transition: color 0.3s ease;
+        }
+
+        .blog-title {
+            font-size: 1.4rem;
+            margin-bottom: 1rem;
+            font-family: 'Bodoni Moda', serif;
+            transition: color 0.3s ease;
+        }
+
+        .blog-excerpt { color: var(--text-muted); font-size: 0.95rem; margin-bottom: 1rem; }
+        .read-more { font-size: 0.85rem; border-bottom: 1px solid var(--accent); padding-bottom: 2px; }
+
+        /* --- Article Overlay (Hidden by default) --- */
+        .article-overlay {
+            position: fixed;
+            top: 0; left: 0; width: 100%; height: 100%;
+            background: var(--overlay-bg);
+            z-index: 1000;
+            overflow-y: auto;
+            transform: translateY(100%); /* Hidden below screen */
+            transition: transform 0.5s cubic-bezier(0.77, 0, 0.175, 1);
+            padding: 5% 10%;
+        }
+
+        .article-overlay.active {
+            transform: translateY(0); /* Slide up */
+        }
+
+        .close-btn {
+            position: fixed;
+            top: 2rem; right: 2rem;
+            font-family: 'Inter', sans-serif;
+            font-size: 1rem;
+            color: var(--text-muted);
+            cursor: pointer;
+            border: 1px solid var(--line-color);
+            padding: 0.5rem 1rem;
+            background: var(--bg-color);
+            transition: all 0.3s ease;
+        }
+        .close-btn:hover { border-color: var(--accent); color: var(--accent); }
+
+        .article-content {
+            max-width: 700px;
+            margin: 4rem auto 8rem auto;
+        }
+        .article-content h1 { font-size: 3rem; margin-bottom: 1rem; color: var(--accent); }
+        .article-content p { margin-bottom: 1.5rem; font-size: 1.1rem; color: #dcdcdc; }
+        .article-content h3 { font-family: 'Inter', sans-serif; font-weight: 500; margin-top: 3rem; margin-bottom: 1rem; font-size: 1.5rem; }
+
+        /* --- Footer --- */
+        footer {
+            padding: 4rem 0;
+            border-top: 1px solid var(--line-color);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            font-size: 0.9rem;
+            color: var(--text-muted);
+        }
+        .social-links a { margin-left: 2rem; text-transform: uppercase; letter-spacing: 0.1em; font-size: 0.8rem; }
+
+        /* --- CASSIA Featured Card --- */
+        .cassia-card {
+            background: linear-gradient(145deg, #111 0%, var(--bg-color) 100%);
+            border: 1px solid var(--line-color);
+            padding: 2.5rem;
+            margin-bottom: 3rem;
+            position: relative;
+            transition: all 0.4s ease;
+            /* Subtle gold glow on top border only */
+            border-top: 1px solid var(--accent);
+        }
+
+        .cassia-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 10px 30px rgba(0,0,0,0.5);
+            border-color: var(--accent);
+        }
+
+        .cassia-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+            margin-bottom: 1.5rem;
+        }
+
+        .cassia-label {
+            font-family: 'Inter', sans-serif;
+            font-size: 0.75rem;
+            text-transform: uppercase;
+            letter-spacing: 0.15em;
+            color: var(--accent);
+            margin-bottom: 0.5rem;
+            display: block;
+        }
+
+        .cassia-card h3 {
+            font-size: 2.2rem;
+            margin: 0;
+            line-height: 1.1;
+        }
+
+        .cassia-card p {
+            color: #dcdcdc;
+            font-size: 1.05rem;
+            max-width: 600px;
+            margin-bottom: 2rem;
+            line-height: 1.7;
+        }
+
+        /* Tech Stack Badges */
+        .tech-stack {
+            display: flex;
+            gap: 0.8rem;
+            margin-bottom: 2rem;
+            flex-wrap: wrap;
+        }
+
+        .tech-badge {
+            font-size: 0.75rem;
+            padding: 0.3rem 0.8rem;
+            border: 1px solid #333;
+            border-radius: 100px;
+            color: var(--text-muted);
+            font-family: 'Inter', sans-serif;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* Action Buttons */
+        .cassia-actions {
+            display: flex;
+            gap: 1.5rem;
+        }
+
+        .btn {
+            padding: 0.8rem 2rem;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            font-weight: 500;
+            transition: all 0.3s ease;
+            display: inline-block;
+        }
+
+        .btn-primary {
+            background-color: var(--accent);
+            color: var(--bg-color); /* Dark text on gold bg */
+            border: 1px solid var(--accent);
+        }
+
+        .btn-primary:hover {
+            background-color: #d4b068; /* Slightly lighter gold */
+            color: #000;
+        }
+
+        .btn-outline {
+            border: 1px solid var(--line-color);
+            color: var(--text-main);
+        }
+
+        .btn-outline:hover {
+            border-color: var(--accent);
+            color: var(--accent);
+        }
+
+        /* Mobile Adjustments */
+        @media (max-width: 768px) {
+            .hero { grid-template-columns: 1fr; text-align: center; justify-items: center; }
+            .blog-grid { grid-template-columns: 1fr; }
+            .pub-item { grid-template-columns: 1fr; }
+            .highlight-pub { border-left: none; margin-left: 0; padding-left: 0; border-top: 1px solid var(--accent); padding-top: 1rem;}
+            .article-content h1 { font-size: 2rem; }
+            .cassia-card { padding: 1.5rem; }
+            .cassia-actions { flex-direction: column; gap: 1rem; }
+            .cassia-actions .btn { width: 100%; text-align: center; }
+        }
+    </style>
 </head>
 <body>
 
-    <!-- Navigation Menu -->
-    <header>
-        <nav aria-label="Main navigation">
-            <div class="logo">Elliot Yixuan Xie</div>
-            <ul class="nav-links">
-                <li><a href="#about" aria-label="About Me section">About Me</a></li>
-                <li><a href="#research" aria-label="Research section">Research</a></li>
-                <li><a href="#contact" aria-label="Contact section">Contact</a></li>
-            </ul>
-            <button class="burger" aria-label="Toggle navigation menu" aria-expanded="false">
-                <div class="line1"></div>
-                <div class="line2"></div>
-                <div class="line3"></div>
-            </button>
+    <div class="container">
+        <nav>
+            <div class="nav-name">Yixuan Elliot Xie</div>
+            <div class="nav-links">
+                <a href="#publications">Work</a>
+                <a href="#thoughts">Thoughts</a>
+                <a href="#about">About</a>
+            </div>
         </nav>
-    </header>
 
-    <!-- Hero Section -->
-    <section class="hero">
-        <div class="hero-content">
-            <h1>Hi, I'm Elliot Yixuan Xie</h1>
-            <p>Ph.D. Student at University of Wisconsin-Madison</p>
-            <a href="#about" class="btn" aria-label="Learn more about Elliot Xie">Learn More</a>
+        <header class="hero" id="about">
+            <img src="photo.jpg" alt="Yixuan Elliot Xie" class="profile-img">
+            <div class="hero-text">
+                <span class="hero-role">PhD Candidate • Biomedical Data Science</span>
+                <h1>Yixuan Elliot Xie</h1>
+                <p class="hero-desc">
+                    University of Wisconsin - Madison.<br>
+                    Bridging the gap between Single-Cell Genomics and Large Language Models.
+                </p>
+            </div>
+        </header>
+
+        <div class="quote-section">
+            <blockquote>
+                “The vast majority of all human effort, however great or minuscule, ends in failure. So what are your options? You just admit pre-defeat that odds are you’re going to be right or you do it anyway. Maybe we’re a success regardless of the outcome, because we tried. Maybe there’s beauty in the struggle against near certain failure.”
+            </blockquote>
         </div>
-    </section>
 
-    <!-- About Me Section -->
-    <section id="about" class="reveal fade-bottom">
-        <h2>About Me</h2>
-        <div class="about-content">
-            <p>
-                I'm a Ph.D. student at the University of Wisconsin-Madison specializing in Biostatistics and Bioinformatics.
-                My current work focuses on single-cell analysis, multi-agent large language models (LLMs), and reinforcement learning (RL).
-                I'm passionate about developing computational methods to solve complex biological problems and advance healthcare research.
-            </p>
+        <section id="publications">
+            <div class="section-header">
+                <h2>Selected Papers</h2>
+            </div>
+
+            <div class="cassia-card">
+                <div class="cassia-header">
+                    <div>
+                        <span class="cassia-label">Featured Paper</span>
+                        <h3>CASSIA</h3>
+                        <div class="pub-meta" style="margin-top: 0.5rem;"><i>Nature Communications</i></div>
+                    </div>
+                    <div class="pub-year" style="color: var(--accent);">2024</div>
+                </div>
+
+                <p>
+                    A multi-agent Large Language Model framework for reference-free, interpretable, and automated single-cell type annotation. CASSIA mimics the reasoning process of human experts to handle ambiguity in high-dimensional biological data.
+                </p>
+
+                <div class="tech-stack">
+                    <span class="tech-badge">LLM Agents</span>
+                    <span class="tech-badge">Single-Cell</span>
+                    <span class="tech-badge">Python / R</span>
+                </div>
+
+                <div class="cassia-actions">
+                    <a href="https://github.com/ElliotXie/CASSIA" target="_blank" class="btn btn-primary">
+                        View on GitHub
+                    </a>
+                    <a href="https://www.nature.com/articles/s41467-024-54497-w" target="_blank" class="btn btn-outline">
+                        Read the Paper
+                    </a>
+                </div>
+            </div>
+
+            <a href="https://journals.asm.org/doi/10.1128/msystems.01044-25" target="_blank" class="pub-item" style="display: grid;">
+                <div class="pub-year">2025</div>
+                <div class="pub-content">
+                    <h4>Gut-larynx axis and its contribution to laryngeal immunity</h4>
+                    <div class="pub-meta"><i>mSystems</i> • R An, E Xie, J Binns, FE Rey...</div>
+                    <div class="tech-stack" style="margin-top: 0.8rem;">
+                        <span class="tech-badge">Microbiome</span>
+                        <span class="tech-badge">16S rRNA</span>
+                        <span class="tech-badge">Immunology</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://projecteuclid.org/journals/annals-of-applied-statistics/volume-19/issue-3/Surrogate-selection-oversamples-expanded-T-cell-clonotypes/10.1214/25-AOAS2032.full" target="_blank" class="pub-item" style="display: grid;">
+                <div class="pub-year">2025</div>
+                <div class="pub-content">
+                    <h4>Surrogate selection oversamples expanded T cell clonotypes</h4>
+                    <div class="pub-meta"><i>Annals of Applied Statistics</i> • P Yu, Y Lian, E Xie...</div>
+                    <div class="tech-stack" style="margin-top: 0.8rem;">
+                        <span class="tech-badge">Bayesian Stats</span>
+                        <span class="tech-badge">TCR-seq</span>
+                        <span class="tech-badge">Birth-Death Models</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.cell.com/iscience/fulltext/S2589-0042(24)01381-6" target="_blank" class="pub-item" style="display: grid;">
+                <div class="pub-year">2024</div>
+                <div class="pub-content">
+                    <h4>Single-cell view into the role of microbiota shaping host immunity in the larynx</h4>
+                    <div class="pub-meta"><i>iScience</i> • R An, Z Ni, E Xie...</div>
+                    <div class="tech-stack" style="margin-top: 0.8rem;">
+                        <span class="tech-badge">scRNA-seq</span>
+                        <span class="tech-badge">Microbiome</span>
+                        <span class="tech-badge">Cell Atlas</span>
+                    </div>
+                </div>
+            </a>
+
+            <a href="https://www.nature.com/articles/s41598-024-73199-w" target="_blank" class="pub-item" style="display: grid;">
+                <div class="pub-year">2024</div>
+                <div class="pub-content">
+                    <h4>Transcriptomic and proteomic spatial profiling of diffuse midline glioma</h4>
+                    <div class="pub-meta"><i>Scientific Reports</i> • MD Sudarshawn Damodharan...</div>
+                    <div class="tech-stack" style="margin-top: 0.8rem;">
+                        <span class="tech-badge">Spatial-omics</span>
+                        <span class="tech-badge">GeoMx DSP</span>
+                        <span class="tech-badge">Cancer</span>
+                    </div>
+                </div>
+            </a>
+        </section>
+
+        <section id="thoughts">
+            <div class="section-header">
+                <h2>Thoughts</h2>
+            </div>
+            <div class="blog-grid">
+                <div class="blog-post">
+                    <span class="blog-date">Dec 2025</span>
+                    <h3 class="blog-title">The New Productivity Metric: Agent-Hours per Human-Hour</h3>
+                    <p class="blog-excerpt">In the age of AI agents, competitive advantage comes from maximizing the surplus value of autonomous work. If you're not exploiting this free capital, you're already behind.</p>
+                    <a onclick="openArticle('article-2')" class="read-more">Read More</a>
+                </div>
+            </div>
+        </section>
+
+        <footer>
+            <div>&copy; 2025 Yixuan Elliot Xie</div>
+            <div class="social-links">
+                <a href="https://www.linkedin.com/in/yixuan-xie-5904391a0/" target="_blank">LinkedIn</a>
+                <a href="https://x.com/Xie227Xie" target="_blank">X (Twitter)</a>
+                <a href="https://bsky.app/" target="_blank">Bluesky</a>
+                <a href="https://medium.com/@xie227" target="_blank">Medium</a>
+                <a href="https://github.com/ElliotXie" target="_blank">GitHub</a>
+            </div>
+        </footer>
+    </div>
+
+    <div id="article-1" class="article-overlay">
+        <div class="close-btn" onclick="closeArticle('article-1')">Close X</div>
+        <div class="article-content">
+            <span class="blog-date">Nov 2025</span>
+            <h1>On the fragility of Agentic Systems</h1>
+            <p>When we began developing CASSIA, the premise was simple: Large Language Models (LLMs) are excellent reasoning engines. If we treat them as individual agents—one acting as a biologist, another as a critic, and another as a summarizer—we should be able to replicate the manual annotation workflow.</p>
+            
+            <p>However, biological data is messy. Unlike code generation, where the output works or it doesn't, cell type annotation exists in a grey area. A cell might express markers for both T-cells and NK cells. An LLM agent, trained to be helpful, often tries to "force" a classification where ambiguity is the scientific reality.</p>
+
+            <h3>The "Yes-Man" Problem</h3>
+            <p>One of the primary failure modes we observed was agent agreeableness. If Agent A (the Proposer) hallucinated a cell type based on weak evidence, Agent B (the Critic) often failed to correct it, instead fabricating a justification for the error. This echo chamber effect is the single biggest hurdle in deploying autonomous agents in rigorous scientific pipelines.</p>
+
+            <p>The solution lies not in better prompting, but in grounding. By forcing the agents to query external, immutable knowledge graphs before debating, we reduce the hallucination window. But the struggle remains: how do we teach a system to say "I don't know"?</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Research Section -->
-    <section id="research">
-        <h2>Research Interests</h2>
-        <div class="research-cards">
-            <article class="card reveal fade-left">
-                <i class="fas fa-dna fa-3x" style="color: #1e90ff; margin-bottom: 1rem;" aria-hidden="true"></i>
-                <h3>Single-Cell Analysis</h3>
-                <p>Exploring cellular heterogeneity through advanced computational methods, focusing on identifying cell types and understanding disease mechanisms at the single-cell level.</p>
-            </article>
-            <article class="card reveal fade-bottom">
-                <i class="fas fa-robot fa-3x" style="color: #1e90ff; margin-bottom: 1rem;" aria-hidden="true"></i>
-                <h3>Multi-Agent LLMs</h3>
-                <p>Developing collaborative language models for complex problem-solving in biomedical research, enabling advanced data analysis and interpretation of scientific literature.</p>
-            </article>
-            <article class="card reveal fade-right">
-                <i class="fas fa-brain fa-3x" style="color: #1e90ff; margin-bottom: 1rem;" aria-hidden="true"></i>
-                <h3>Reinforcement Learning</h3>
-                <p>Applying RL techniques to optimize decision-making processes in healthcare, treatment planning, and drug discovery workflows.</p>
-            </article>
+    <div id="article-2" class="article-overlay">
+        <div class="close-btn" onclick="closeArticle('article-2')">Close X</div>
+        <div class="article-content">
+            <span class="blog-date">Dec 2025</span>
+            <h1>The New Productivity Metric: Agent-Hours per Human-Hour</h1>
+            <p>I've been letting Claude Code run continuously for the past few weeks, and I've realized something fundamental has shifted in how we should measure productivity. The critical metric is no longer output per hour worked. It's how many agent-hours you can generate per human-hour invested.</p>
+
+            <p>This is surplus value (剩余价值) in its purest form. But unlike traditional capital, where surplus value is extracted from labor, here the surplus comes from autonomous systems working on your behalf. Every hour I spend designing a task architecture, writing clear specifications, or setting up workflows translates into 10, 20, sometimes 50 hours of agent work running in parallel.</p>
+
+            <p>The beauty of continuous agent work is that it's fundamentally asymmetric. While I sleep, the agents are refactoring code, running experiments, writing documentation, searching through literature. The compounding effect is staggering. A single well-structured prompt can spawn days of productive work.</p>
+
+            <p>Here's the uncomfortable truth: if you're not exploiting this, you're losing competitive edge. This isn't optional anymore. The researcher who can orchestrate 100 agent-hours per week will outpace the one doing everything manually by an order of magnitude. The startup that parallelizes development across autonomous agents will ship faster than the one relying solely on human velocity.</p>
+
+            <p>This is free capital sitting on the table. The infrastructure is here. The models are capable. The only bottleneck is learning to delegate effectively and trust the process. Those who master this will define the next decade of scientific and technical progress. Those who don't will wonder why they can't keep up.</p>
+
+            <p>We're entering an era where the limiting factor isn't intelligence or effort. It's the ability to architect work such that autonomous agents can execute it. That's the skill worth developing. That's the new literacy.</p>
         </div>
-    </section>
+    </div>
 
-    <!-- Contact Section -->
-    <section id="contact" class="reveal fade-bottom">
-        <h2>Get In Touch</h2>
-        <div class="contact-info">
-            <p>Email: <a href="mailto:xie227@wisc.edu">xie227@wisc.edu</a></p>
-            <p>Connect with me on <a href="https://www.linkedin.com/in/yixuan-xie-5904391a0/" target="_blank" rel="noopener">LinkedIn</a></p>
-        </div>
-    </section>
-
-    <!-- Footer -->
-    <footer>
-        <p>&copy; 2024 Elliot Yixuan Xie | <a href="sitemap.xml">Sitemap</a></p>
-    </footer>
-
-    <!-- Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "Person",
-      "name": "Elliot Yixuan Xie",
-      "url": "https://www.elliotxie.com",
-      "image": "https://www.elliotxie.com/assets/profile-image.jpg",
-      "sameAs": [
-        "https://www.linkedin.com/in/yixuan-xie-5904391a0/",
-        "https://twitter.com/elliotxie"
-      ],
-      "jobTitle": "PhD Student",
-      "worksFor": {
-        "@type": "Organization",
-        "name": "University of Wisconsin-Madison",
-        "url": "https://www.wisc.edu/"
-      },
-      "alumniOf": {
-        "@type": "Organization",
-        "name": "University of Wisconsin-Madison",
-        "url": "https://www.wisc.edu/"
-      },
-      "knowsAbout": ["Biostatistics", "Bioinformatics", "Single-Cell Analysis", "Machine Learning", "Reinforcement Learning", "Multi-Agent LLMs"],
-      "description": "PhD student specializing in Biostatistics and Bioinformatics, focusing on single-cell analysis, multi-agent LLMs, and reinforcement learning."
-    }
-    </script>
-
-    <!-- Breadcrumbs Structured Data -->
-    <script type="application/ld+json">
-    {
-      "@context": "https://schema.org",
-      "@type": "BreadcrumbList",
-      "itemListElement": [
-        {
-          "@type": "ListItem",
-          "position": 1,
-          "name": "Home",
-          "item": "https://www.elliotxie.com/"
-        },
-        {
-          "@type": "ListItem",
-          "position": 2,
-          "name": "About",
-          "item": "https://www.elliotxie.com/#about"
-        },
-        {
-          "@type": "ListItem",
-          "position": 3,
-          "name": "Research",
-          "item": "https://www.elliotxie.com/#research"
-        },
-        {
-          "@type": "ListItem",
-          "position": 4,
-          "name": "Contact",
-          "item": "https://www.elliotxie.com/#contact"
+    <script>
+        // 1. Open article based on ID
+        function openArticle(id) {
+            const element = document.getElementById(id);
+            // SECURITY CHECK: Only open if it is actually an overlay class
+            if(element && element.classList.contains('article-overlay')) {
+                element.classList.add('active');
+                document.body.style.overflow = 'hidden'; // Locks scroll ONLY for popups
+                history.pushState(null, null, '#' + id);
+            }
         }
-      ]
-    }
+
+        // 2. Close article
+        function closeArticle(id) {
+            const element = document.getElementById(id);
+            if (element) {
+                element.classList.remove('active');
+                document.body.style.overflow = 'auto'; // Re-enable scrolling
+                history.pushState(null, null, ' '); // Clear URL
+            }
+        }
+
+        // 3. Handle Browser "Back" Button
+        window.onpopstate = function() {
+            const hash = window.location.hash.substring(1);
+
+            // Close any open overlays first
+            document.querySelectorAll('.article-overlay').forEach(el => {
+                el.classList.remove('active');
+            });
+            document.body.style.overflow = 'auto'; // Always unlock scroll on back button
+
+            // If the hash points to a valid overlay, open it.
+            // If it points to a section (like #thoughts), do nothing (let browser handle it).
+            const target = document.getElementById(hash);
+            if(target && target.classList.contains('article-overlay')) {
+                openArticle(hash);
+            }
+        };
+
+        // 4. Check URL on initial page load
+        window.addEventListener('DOMContentLoaded', () => {
+            const hash = window.location.hash.substring(1);
+            const target = document.getElementById(hash);
+
+            // Only run the popup logic if the target is an article-overlay
+            if(target && target.classList.contains('article-overlay')) {
+                openArticle(hash);
+            }
+        });
     </script>
 
-    <!-- Link to JavaScript -->
-    <script src="script.js"></script>
 </body>
 </html>
